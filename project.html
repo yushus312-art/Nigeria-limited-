@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>PRO</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle">
+  <header class="header">
+     <label for="menu-toggle" class="menu-btn">&#9776;</label>
+    <div class="logo">
+      <h2>Bussiness CO</h2>
+</div>
+       </header>
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">&times;</label>
+    <a href="#home" class="home">Home</a>
+    <a href="#about">About</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact</a>
+  </div>
+ 
+  <section id="home" class="home-container">
+     <img src="https://i.ibb.co/MxHyx5vQ/33dbf81cda426694b849cb13f6ff057b.png" alt="33dbf81cda426694b849cb13f6ff057b"  class="image1">
+    <div class="text">
+      <h3>Business Co</h3>
+<h2>Turning Your Business Ideas Into Reality Through  Excellence.</h2>
+<p>We help businesses grow with innovative ideas, professional services, and smart solutions. Your success starts with the right partnership.</p>
+      <button  class="hire"onclick="this.textContent='We Turn Ideas Into Success'">
+  We Build Your Future
+</button>
+    </div>
+    </section>
+  
+  
+  <section id="about">
+    <div class="about-hero">
+      <h1>About Business Co</h1>
+
+<h4>Building Success Through Innovation and Excellence.</h4>
+
+<p>Business Co is committed to helping businesses grow through innovative ideas, professional services, and reliable solutions. We focus on delivering quality, building strong relationships, and creating opportunities for long-term success.</p> 
+<img src="https://i.ibb.co/WWzDMB0G/IMG-20261106-WA4951.jpg" alt="about-image" class="about-image"> 
+      <div class="icons">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 3v18h18"/>
+  <path d="m7 14 4-4 4 4 6-7"/>
+  <path d="M17 7h4v4"/>
+</svg>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="8" r="3"/>
+  <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+  <path d="M5 10a3 3 0 1 0 0 6"/>
+  <path d="M19 10a3 3 0 1 1 0 6"/>
+</svg>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/>
+  <path d="m9 12 2 2 4-4"/>
+</svg>
+        </div>
+      </div>
+      <button id="learn">Learn More</button>
+  </div>
+  </section>
+  
+  <section id="service">
+    <div class="service">
+      <h5>Business Co Services</h5>
+<h2>Professional Solutions Designed to Help Your Business Grow and Succeed.</h2>
+    </div>
+    <div class="content">
+      <div class="content-image">
+        <img src="https://i.ibb.co/gZSVt1rF/IMG-20261106-WA2891.jpg" alt="IMG-20261106-WA2891" class="web-image">
+        <h3>BUSSINESS CONSUTANT</h3>
+        <p>Solving a particular problem</p>
+            </div>
+      <div class="content-image">
+        <img src="https://i.ibb.co/gZSVt1rF/IMG-20261106-WA2891.jpg" alt="IMG-20261106-WA2891" class="web-image">
+        <h3>Bussiness Stregegy & Growth</h3>
+        <p>Helping in Bussiness to move faster</p>
+      </div>
+      <div class="content-image">
+          <img src="https://i.ibb.co/JwJN1gHR/IMG-20261106-WA3687.jpg" alt="IMG-20261106-WA3687" class="web-image">
+        <h3>MARKETING BRAND</h3>
+        <p>Promoting marketing Advertising</p>
+      </div>
+      <div class="content-image">
+        <img src="https://i.ibb.co/bj3VG81V/IMG-20261106-WA7889.jpg" alt="IMG-20261106-WA7889" class="web-image">
+        <h3>FININACIAL PLANNING</h3>
+        <p>For finiancial planning and making decision</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="contact">
+    <div class="contact">
+       <h6>Contact Us</h6>
+    <p>for more information and enqirue</p>
+    </div>
+       <form id="form-label">
+      <label for="name">Name</label>
+      <input type="name" id="username" placeholder="enter your name" required="">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="enter your email" required="">
+      <label for="number">Phone Number</label>
+      <input type="number" id="number" placeholder="enter your phone number" required="">
+         <button onclick="
+const RegistrationName = document.getElementById('username').value;
+const RegistrationEmail = document.getElementById('email').value;
+const RegistrationNumber = document.getElementById('number').value;
+
+if (RegistrationName === '' || RegistrationEmail === '' || RegistrationNumber === '') {
+    alert('Please fill in all fields');
+} else {
+    alert('Registration Successful!');
+}
+">
+Register Now
+</button>
+    </form>
+  </section>
+  
+ 
+  
+  <script src="project.js"></script>
+</body>
+</html>
